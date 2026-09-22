@@ -1,32 +1,49 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { Sun, Moon } from 'lucide-react';
 
 const ThemeToggle = () => {
-  const [isLight, setIsLight] = useState(false);
+  const [isLight, setIsLight] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        return savedTheme === 'light';
+      }
+      return window.matchMedia('(prefers-color-scheme: light)').matches;
+    }
+    return false;
+  });
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-      setIsLight(true);
+    if (isLight) {
       document.body.classList.add('light-mode');
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    setIsLight(!isLight);
-    if (!isLight) {
-      document.body.classList.add('light-mode');
-      localStorage.setItem('theme', 'light');
     } else {
       document.body.classList.remove('light-mode');
-      localStorage.setItem('theme', 'dark');
     }
+  }, [isLight]);
+
+  const toggleTheme = () => {
+    setIsLight((prev) => {
+      const next = !prev;
+      localStorage.setItem('theme', next ? 'light' : 'dark');
+      return next;
+    });
   };
 
   return (
-    <button className="theme-toggle" onClick={toggleTheme} title="Toggle light/dark mode">
-      <i className={`fas ${isLight ? 'fa-sun' : 'fa-moon'}`}></i>
+    <button 
+      className="theme-toggle-btn" 
+      onClick={toggleTheme} 
+      title={isLight ? "Switch to dark mode" : "Switch to light mode"}
+      aria-label={isLight ? "Switch to dark mode" : "Switch to light mode"}
+      type="button"
+    >
+      {isLight ? (
+        <Moon size={18} aria-hidden="true" />
+      ) : (
+        <Sun size={18} aria-hidden="true" />
+      )}
     </button>
   );
 };
 
-export default ThemeToggle;
+export default ThemeToggle;

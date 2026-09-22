@@ -1,5 +1,3 @@
-import React from 'react';
-
 const WhatsAppButton = () => {
   const phoneNumber = '250780539886';
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
@@ -10,11 +8,12 @@ const WhatsAppButton = () => {
       className="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat on WhatsApp"
+      aria-label="Chat directly with Moise on WhatsApp"
+      title="Chat on WhatsApp"
     >
-      <i className="fab fa-whatsapp"></i>
+      <i className="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
   );
 };
 
-export default WhatsAppButton;
+export default WhatsAppButton;
