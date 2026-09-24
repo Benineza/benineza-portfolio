@@ -5,11 +5,13 @@ const About = () => {
     'Frontend Development',
     'Backend Development',
     'Responsive Design',
+    'React',
+    'REST API',
+    'Tailwind CSS',
+    'PostgreSQL',
     'IT Support',
     'HTML/CSS',
-    'JavaScript',
-    'React',
-    'Tailwind CSS'
+    'JavaScript'
   ];
 
   const highlights = [
@@ -49,7 +51,7 @@ const About = () => {
           </span>
           <h2 className="section-title">Discover My Journey</h2>
           <p className="section-subtitle">
-            A software engineering student dedicated to crafting responsive digital solutions and expanding technical capabilities through hands-on development.
+            A software engineer dedicated to crafting responsive digital solutions and expanding technical capabilities through hands-on development.
           </p>
         </div>
 
@@ -62,7 +64,7 @@ const About = () => {
             </h3>
 
             <p className="about-paragraph">
-              I'm a passionate developer with over 5 years of experience creating digital solutions. My expertise spans front-end and back-end development, with a focus on creating seamless user experiences.
+              I'm a passionate developer with experience in creating digital solutions. My expertise spans front-end and back-end development, with a focus on creating seamless user experiences.
             </p>
 
             <p className="about-paragraph">
@@ -111,4 +113,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About;
