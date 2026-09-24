@@ -25,7 +25,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="footer-desc">
-              Software Engineering student & Creative Developer dedicated to crafting modern, efficient, and user-centric digital experiences.
+              Software Engineering & Creative Developer dedicated to crafting modern, efficient, and user-centric digital experiences.
             </p>
           </div>
 
@@ -133,4 +133,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer;

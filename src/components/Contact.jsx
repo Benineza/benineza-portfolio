@@ -46,7 +46,7 @@ const Contact = () => {
           </span>
           <h2 className="section-title">Get In Touch</h2>
           <p className="section-subtitle">
-            Have a project in mind, an internship opportunity, or want to discuss software engineering? I'd love to connect.
+            Have a project in mind, a professional opportunity, or want to discuss software engineering? I'd love to connect.
           </p>
         </div>
 
@@ -207,4 +207,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact;

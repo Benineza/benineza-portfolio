@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="hero-content">
             <div className="hero-badge">
               <span className="status-dot" aria-hidden="true"></span>
-              <span>Available for Junior Roles & Internships</span>
+              <span>Available for work & Collaborations</span>
             </div>
 
             <h1 className="hero-title">
@@ -28,11 +28,11 @@ const Hero = () => {
             </h1>
 
             <p className="hero-role">
-              Creative Developer & Software Engineering Student
+              Creative Developer & Software Engineering
             </p>
 
             <p className="hero-description">
-              Software Engineering student with skills in web development, IT support, HTML, CSS, JavaScript, and React. Passionate about building efficient, user-friendly digital solutions and expanding technical expertise through hands-on projects.
+              Software Engineering with skills in web development, IT support, HTML, CSS, JavaScript, and React. Passionate about building efficient, user-friendly digital solutions and expanding technical expertise through hands-on projects.
             </p>
 
             <div className="hero-actions">
@@ -140,4 +140,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero;
