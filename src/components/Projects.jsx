@@ -19,7 +19,7 @@ const Projects = () => {
       title: 'Software Developer Portfolio',
       description: 'A modern, responsive portfolio website built with React and Vite, featuring dark/light mode, certifications showcase, tech stack display, and seamless navigation. Demonstrates component-based architecture and responsive design principles.',
       technologies: ['React 19', 'Vite', 'Modern CSS', 'Accessibility'],
-      liveDemo: 'https://benineza.vercel.app/',
+      liveDemo: 'https://benineza-portfolio.vercel.app/',
       sourceCode: 'https://github.com/Benineza/benineza-portfolio',
       image: project2Image
     },
@@ -106,4 +106,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Projects;
