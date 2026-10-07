@@ -28,10 +28,18 @@ const Certifications = () => {
     },
     {
       id: 4,
-      name: 'International Computer Driving Licence (ICDL)',
+      name: 'International Certification of Digital Literacy (ICDL)',
       issuer: 'ICDL',
       category: 'Digital Literacy & Applied Computing',
       credentialUrl: 'https://icdl.org/',
+      credentialId: 'Verified'
+    },
+    {
+      id: 5,
+      name: 'AI Fluency: Framework and Foundations',
+      issuer: 'Anthropic',
+      category: 'AI Literacy & Responsible AI',
+      credentialUrl: 'https://academy.claude.com/verify/db0f94ae43729d7a06c281ecb0674802',
       credentialId: 'Verified'
     }
   ];
@@ -87,4 +95,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications;
+export default Certifications;
