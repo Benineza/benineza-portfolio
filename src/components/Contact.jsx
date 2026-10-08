@@ -145,7 +145,7 @@ const Contact = () => {
                     name="name"
                     type="text"
                     required
-                    placeholder="Jane Doe"
+                    //placeholder="Jane Doe"
                     value={formData.name}
                     onChange={handleChange}
                     className="form-input"
@@ -159,7 +159,7 @@ const Contact = () => {
                     name="email"
                     type="email"
                     required
-                    placeholder="jane@example.com"
+                    //placeholder="jane@example.com"
                     value={formData.email}
                     onChange={handleChange}
                     className="form-input"
@@ -174,7 +174,7 @@ const Contact = () => {
                   name="subject"
                   type="text"
                   required
-                  placeholder="Opportunity / Collaboration"
+                  //placeholder="Opportunity / Collaboration"
                   value={formData.subject}
                   onChange={handleChange}
                   className="form-input"
@@ -188,7 +188,7 @@ const Contact = () => {
                   name="message"
                   required
                   rows={4}
-                  placeholder="Hello Moise, I'd like to discuss..."
+                  //placeholder="Hello Moise, I'd like to discuss..."
                   value={formData.message}
                   onChange={handleChange}
                   className="form-textarea"

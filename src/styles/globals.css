@@ -1066,7 +1066,42 @@ header.scrolled {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 12px;
+}
+
+.cert-issuer-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.cert-logo-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.cert-card:hover .cert-logo-box {
+  border-color: var(--accent-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1.03);
+}
+
+.cert-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .cert-issuer-chip {
@@ -1432,6 +1467,20 @@ footer {
 
   .certifications-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cert-card {
+    padding: 20px;
+  }
+
+  .cert-badge-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .cert-issuer-group {
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
   .whatsapp-float {
